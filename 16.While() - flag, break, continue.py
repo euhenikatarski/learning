@@ -32,3 +32,13 @@ while True:
     else:
         print(toppings)
 
+print('\n-------------------------------------------------------------')
+
+age = 0
+
+while age < 10:
+    age += 1
+    if age % 2 == 0:
+        continue
+    print(age)
+
