@@ -5,7 +5,8 @@ while pizza_toppings != 'quit':
     print(pizza_toppings)
 
 print('\n-------------------------------------------------------------')
-
+#Тут задаем переменную со значением True, когда нужно закончить перебор переменная
+#сменяеться значением False и программа переходит к следующему блоку
 active = True
 while active:
     age = input('Введите возраст:')
@@ -24,7 +25,7 @@ while active:
         active = False
 
 print('\n-------------------------------------------------------------')
-
+#Оператор continue
 while True:
     toppings = input('Топинг:')
     if toppings == 'quit':
