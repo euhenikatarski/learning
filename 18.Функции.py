@@ -63,3 +63,7 @@ while True:
 author_song = make_album(author,song_enter)
 print(author_song)
 
+print('\n-----------------------------------------------\n')
+
+def calc():
+    
