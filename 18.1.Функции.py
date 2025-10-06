@@ -65,5 +65,12 @@ print(author_song)
 
 print('\n-----------------------------------------------\n')
 
-def calc():
+list = ['hello','bb','koko','shosho']
+
+def show_messages(messages):
+    for x in messages:
+        msg = f'Сообщение: {x.title()}'
+        print(msg)
+
+
     
