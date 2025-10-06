@@ -1,5 +1,5 @@
 messages = ['2','3','4','5','6']
-sent_messages =[]
+sent_messages = []
 
 print(messages)
 print(sent_messages)
