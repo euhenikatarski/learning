@@ -1,11 +1,14 @@
 nums = [1,2,3,4,5]
-x = 9
-def twoSum(self, nums: list[int], x: int) -> list[int]:
-
+x = 6
+def twoSum(nums, x):
+    
     known_numbers = {}
     for idx, num in enumerate(nums):
         desire = x - num
         if desire in known_numbers:
                 return [known_numbers[desire], idx]
-    known_numbers[num] = idx 
-    print(known_numbers)
+        known_numbers[num] = idx
+    return None
+
+known_numbers = twoSum(nums, x)
+print(known_numbers)
