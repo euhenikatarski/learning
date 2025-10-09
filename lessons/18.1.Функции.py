@@ -1,3 +1,6 @@
+from make_album import make_albums
+
+
 def display_message():
     print('\nсоси пени')
 
@@ -40,27 +43,16 @@ print(pair)
 
 print('\n-----------------------------------------------\n')
 
-def make_album(song_author, song_name, song_time = ''):
-    song_info = {'author': song_author, 'song': song_name, 'time': song_time}
-    return song_info
-song = make_album('Скриптонит','Притон')
-song_1 = make_album('ATL','Танцуйте')
-song_2 = make_album('Scorpions','Humanity','5:20')
-print(f'{song},\n{song_1},\n{song_2}')
-
-print('\n-----------------------------------------------\n')
-
 while True:
     author = input('Введите имя автора: ')
-    if author == 'q':
-        break
     song_enter = input('Введите название песни: ')
-    if song_enter == 'q':
+    quit = input('Еще раз? yes/no : ')
+    if quit == 'no':
+        author_song = make_albums(author, song_enter)
         break
-    quit = input('Введите "q" для выхода: ')
-    if quit == 'q':
-        break
-author_song = make_album(author,song_enter)
+    else:
+        author_song = make_albums(author, song_enter)
+#author_song = make_album(author,song_enter)
 print(author_song)
 
 print('\n-----------------------------------------------\n')
