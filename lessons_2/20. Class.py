@@ -76,7 +76,8 @@ class User:
 
         print(
               f'Name - {self.first_name.title()}, Second name - {self.second_name.title()}, '
-              f'Last name - {self.last_name.title()}, age - {self.age}, sex - {self.sex} '                  f'Online - {self.login_attempts}' 
+              f'Last name - {self.last_name.title()}, age - {self.age}, sex - {self.sex} '                  
+              f'Online - {self.login_attempts}' 
             )
     
     def greet_user(self):
@@ -104,3 +105,53 @@ print(f'\n-------------------------------------------------------------\n')
 
 user_2 = User('aleg','maleg','kalek', '28', 'male')
 user_2.describe_user()
+
+
+class IceCreamStand(Restaurant):
+
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+
+    def show_flavors(self):
+        print(f'Виды мороженного: ')
+        for flavor in self.flavors:
+            print(f'\t{flavor}')
+
+ice_cream = IceCreamStand('Маркони','Сладкое',['Клубничное','Ягодное','Пломбир'])
+ice_cream.show_flavors()
+
+print(f'\n-------------------------------------------------------------\n')
+
+
+class Admin(User):
+
+    def __init__(self, first_name, second_name, privileges, last_name='', age='', sex=''):
+        super().__init__(first_name, second_name, last_name, age, sex)
+        self.privileges = Privileges(privileges)
+
+    #def show_priveleges(self):
+     #   
+      #  print(f'Виды привелегий: ')
+       # for privilege in self.privileges:
+        #    print(f'\t{privilege}')
+
+#admin = Admin('Lesha','Kartosha', ['srat','scat','blevat'], 'debik', 17, 'male')
+#admin.show_priveleges()
+#admin.increment_login_attempts()
+#admin.describe_user()
+
+class Privileges():
+
+    def __init__(self, privileges):
+        
+        self.privileges = privileges
+
+    def show_privileges(self):
+        
+        print(f'Виды привелегий: ')
+        for privilege in self.privileges:
+            print(f'\t{privilege}')
+
+admin_1 = Admin('1','2',['3','4','5'])
+admin_1.privileges.show_privileges()
