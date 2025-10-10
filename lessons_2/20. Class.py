@@ -154,4 +154,5 @@ class Privileges():
             print(f'\t{privilege}')
 
 admin_1 = Admin('1','2',['3','4','5'])
+admin_1.describe_user()
 admin_1.privileges.show_privileges()
