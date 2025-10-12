@@ -1,5 +1,10 @@
 lst = [1, 2, 3]
 
+#set() - убирает дубликаты
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique = list(set(numbers))
+print(unique)
+
 # Добавляет элемент в конец списка
 lst.append(4)  
 print(lst)  # [1, 2, 3, 4]
