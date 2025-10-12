@@ -1,0 +1,3 @@
+Список гостей: 
+
+	Hello & C:/Users/Евгений/Appdata/Local/Programs/Python/Python313/Python.Exe "D:/Python Projects/Lessons/Files And Exceptions/Animals.Py"
