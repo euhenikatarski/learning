@@ -25,7 +25,8 @@ def get_new_user(path):
 
 def greet_user():
     """Приветствует пользователя по имени."""
-    path = Path('lessons/stage/username.json')
+    path = Path('username.json')
+    path.parent.mkdir(parents=True, exist_ok=True)
     user = get_stored_user(path)
     if user:
         print(f'Это вы {user['name'].title()} {user['second_name'].title()}?')

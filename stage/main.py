@@ -3,7 +3,8 @@ import json
 
 def numbers():
 
-    path = Path('lessons/stage/number.json')
+    path = Path('number.json')
+    path.parent.mkdir(parents=True, exist_ok=True)
 
     if path.exists():
         

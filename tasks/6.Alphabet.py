@@ -14,7 +14,7 @@ def get_alphabet_index(char):
             print(f'Вы ввели более 1 символа: --- {char} ---')
             return char
         elif len(char) < 1:
-            print('Введите символ')
+            print('Нужно ввести символ')
             return char
         elif char in alphabet:
             print(f'Буква "{char.title()}" {alphabet.index(char) + 1}-ая в алфавите')
