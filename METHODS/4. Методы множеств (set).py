@@ -19,4 +19,7 @@ print(a.union(b))  # {1, 3, 4, 5, 6}
 print(a.intersection(b))  # {3}
 
 # Разность множеств
+print(a)
+print(b)
 print(a.difference(b))  # {1, 6}
+print(b.difference(a))  # {4, 5}

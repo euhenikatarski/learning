@@ -12,7 +12,11 @@ def send_messages(messages, sent_messages):
         print(f'Отправлено: {current_message}')
         sent_messages.append(current_message)
 
+#messages[:] позволяет оставить в списке message значения.
 send_messages(messages[:], sent_messages)
+
+#в этом варианте значения удаляются из списка messages
+send_messages(messages, sent_messages)
 
 print(messages)
 print(sent_messages)

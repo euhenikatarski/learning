@@ -36,5 +36,5 @@ while True:
         print('На ноль делить нельзя!')
     
     except KeyboardInterrupt:
-        print('\nПользователь прервал программу')
+        print('\n\n--- Пользователь прервал программу ---')
         break
